@@ -2,18 +2,27 @@ body{
     background-color:beige ;
     margin:0 0 0;
 }
-header{
-    background-color: red;
-    margin:0 0 0 0;
-}
-#hero{
-    display:flex ;
-    justify-content: center;
-    align-items: center;
-    gap:3rem ;
+.heroarticle{
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+    gap:0.5rem;
     background-color: grey;
+    margin-top:1rem;
 }
-#hero img{
-    height:400px;
-    width:500px;
+.heroarticle img{
+    max-height:50rem ;
+    max-width: 45rem ;
+}
+.heroarticle > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    width:95%;
+    height:1px;
+    background-color: black;
+}
+.articles{
+
 }
