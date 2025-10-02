@@ -1,17 +1,15 @@
 body{
-    background-color:beige ;
     margin:0 0 0;
 }
 .heroarticle{
     display:grid ;
     grid-template-columns: 1fr 1fr;
     gap:0.5rem;
-    background-color: grey;
     margin-top:1rem;
 }
 .heroarticle img{
-    max-height:50rem ;
-    max-width: 45rem ;
+    height:50rem ;
+    width: 60rem ;
 }
 .heroarticle > div:nth-child(2){
     display: flex;
@@ -25,15 +23,20 @@ hr{
 }
 .articles{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin:0 1rem 0 1rem;
     gap:0.5rem;
 
 }
 .articles article{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto auto;
+    justify-content: center;
+    align-items: center;
     border:1px solid black;
     border-radius: 0.2rem;
-    background-color: greenyellow;
+    text-align: center;
 
 }
 article img{
@@ -41,5 +44,20 @@ article img{
     height:15rem;
 }
 .sectionheader{
+    border-left:0.5rem solid red;
     margin-left:1rem;
+    padding-left:0.3rem;
+    margin:0.5rem 0 0 1rem;
+}
+article > div:first-child{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+}
+article > h3{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+}
+article > p:nth-child(3){
+    grid-column-start:1 ;
+    grid-column-end: 3;
 }
