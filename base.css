@@ -2,4 +2,9 @@
     --header-text-color:white;
     --header-bg-color:#24478f;
     --default-text-color:black;
+    --secondary-text-color: #5f5f5f;
+
+}
+body{
+    margin:0 0 0;
 }

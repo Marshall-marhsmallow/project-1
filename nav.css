@@ -1,3 +1,4 @@
+/*--header-and-contents*/
 header{
     display:grid;
     width:100%;
@@ -37,12 +38,13 @@ header > div:last-child > button:hover{
     color:var(--default-text-color);
 
 }
+/*--nav-and-contents*/
 nav{
     display: flex;
     justify-content: center;
     align-items:center;
 }
-ul{
+nav ul{
     list-style-type: none;
     display:flex ;
     gap:2rem;

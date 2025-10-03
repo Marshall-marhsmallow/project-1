@@ -1,18 +1,17 @@
-body{
-    margin:0 0 0;
-}
+/*--heroarticle an dside section*/
 .heroarticle{
     display:grid;
-    grid-template-columns:auto auto ;
-    gap:0.5rem;
+    grid-template-columns:40% 40% 20%;
+    gap:0.7rem;
     margin-top:1rem;
     justify-content: center;
     align-items: center;
 }
 
 .heroarticle img{
-    height:30rem ;
-    width:40rem ;   
+    height:100% ;
+    width:100% ;
+    object-fit: contain;
 }
 .heroarticle a{
     text-decoration:none;
@@ -21,11 +20,13 @@ body{
 .heroarticle a:hover{
     text-decoration:underline;
 }
+/*--line under latest news and will be used severaltimes*/
 hr{
     width:99%;
     height:1px;
     background-color: black;
 }
+/*--articles-grid*/
 .articles{
     display:grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -33,9 +34,6 @@ hr{
     gap:0.5rem;
 }
 .articles article{
-    display:grid;
-    grid-template-columns: auto auto;
-    grid-template-rows:auto auto auto;
     justify-content: center;
     align-items: center;
     border:1px solid black;
@@ -60,11 +58,31 @@ article a{
 article a:hover{
     text-decoration:underline;
 }
+article > a > p:nth-child(4){
+    color:var(--secondary-text-color);
+}
+article > a > p:nth-child(5){
+    color:var(--secondary-text-color);
+
+}
+/*--footer-section*/
 footer{
-    margin-topgti;
+    display: flex;
+    margin:1rem 0 0 0 ;
     background-color: #5f5f5f;
     padding:1rem;
+    color:var(--header-text-color);
+    gap:2rem;
+    justify-content: center;
 }
+
 footer hr{
     background-color: white;
+}
+footer ul{
+    padding:0;
+    list-style-type:none;
+}
+footer li{
+    margin:1rem;
 }
