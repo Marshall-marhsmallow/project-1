@@ -5,17 +5,21 @@ header{
     display:grid;
     grid-template-columns:auto auto auto;
     align-items: center;
-    background-color: #24478f;
+    background-color: var(--header-bg-color);
     color: var(--header-text-color);
 }
-header > div:first-child p{
-    margin-left:1rem;
+header img{
+    height:75px;
+    width:150px;
 }
 header > div:last-child{
     display:flex;
     justify-self:flex-end;
     gap:0.5rem;
 
+}
+header button{
+    color:var(--header-text-color);
 }
 header > div:last-child > button{
     background-color:transparent;
@@ -26,10 +30,11 @@ header > div:last-child > button{
 
 }
 header > div:last-child > button:hover{
-    background-color:#d5d5d5 ;
+    background-color:var(--header-text-color) ;
     border-radius:1rem;
     transition-duration: 0.5s ;
     cursor: pointer;
+    color:var(--default-text-color);
 
 }
 nav{
@@ -45,7 +50,7 @@ ul{
 nav a{
     position: relative;
     text-decoration:none;
-    color:black;
+    color:var(--default-text-color);
 }
 nav a:after{
   content: '';
