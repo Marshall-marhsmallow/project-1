@@ -5,6 +5,8 @@ header{
     display:grid;
     grid-template-columns:auto auto auto;
     align-items: center;
+    background-color: #24478f;
+    color: var(--header-text-color);
 }
 header > div:first-child p{
     margin-left:1rem;
@@ -27,7 +29,7 @@ header > div:last-child > button:hover{
     background-color:#d5d5d5 ;
     border-radius:1rem;
     transition-duration: 0.5s ;
-    pointer:;
+    cursor: pointer;
 
 }
 nav{
@@ -42,6 +44,8 @@ ul{
 }
 nav a{
     position: relative;
+    text-decoration:none;
+    color:black;
 }
 nav a:after{
   content: '';

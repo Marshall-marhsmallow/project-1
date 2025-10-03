@@ -14,6 +14,13 @@ body{
     height:30rem ;
     width:40rem ;   
 }
+.heroarticle a{
+    text-decoration:none;
+    color:black;
+}
+.heroarticle a:hover{
+    text-decoration:underline;
+}
 hr{
     width:99%;
     height:1px;
@@ -45,4 +52,11 @@ article img{
     margin-left:1rem;
     padding-left:0.3rem;
     margin:0.5rem 0 0 1rem;
+}
+article a{
+    text-decoration:none;
+    color:black;
+}
+article a:hover{
+    text-decoration:underline;
 }
