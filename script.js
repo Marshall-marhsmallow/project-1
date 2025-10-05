@@ -1,14 +1,30 @@
-function opentab(evt, newssection){
-    var i, sidearticles, tabbutton;
-    sidearticles = document.getElementsByClassName("sidearticle")
-    for (i=0; i < sidearticles.length; i++){
-        sidearticles[i].computedStyleMap.display="none";
-    }
-    tabbutton = document.getElementsByClassName("tabbutton");
-    for (i=0; i < tabbutton.length; i++){
-        tabbutton[i].className = tabbutton[i].className.replace(" active","");
-    }
-    document.getElementById(newssection).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-document.getElementById("defaultTab").click(); 
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelector('.tab');
+  const panels = document.querySelectorAll('.sidearticles');
+  const buttons = document.querySelectorAll('.tabbutton');
+
+  function showPanel(id) {
+    panels.forEach(p => p.style.display = 'none');
+    
+    buttons.forEach(b => b.classList.remove('active'));
+
+   
+    const panel = document.getElementById(id);
+    if (panel) panel.style.display = 'block';
+
+    
+    const btn = [...buttons].find(b => b.dataset.target === id);
+    if (btn) btn.classList.add('active');
+  }
+
+
+  tabs.addEventListener('click', (e) => {
+    const btn = e.target.closest('.tabbutton');
+    if (!btn) return;
+    const id = btn.dataset.target;
+    showPanel(id);
+  });
+
+  
+  showPanel('politics');
+});
