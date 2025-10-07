@@ -9,18 +9,10 @@
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="footer.css">
 
     <!-- Ladda JS efter att HTML laddats -->
     <script src="script.js" defer></script>
-
-    <style>
-      /* Göm alla flikar som standard */
-      .sidearticles { display: none; }
-      /* Markering för aktiv knapp */
-      .tabbutton.active {
-        background-color: #ddd;
-        border: 1px solid #555;
-      }
     </style>
   </head>
 
@@ -35,18 +27,15 @@
         <button>Subscribe</button>
       </div>
     </header>
-
     <nav>
       <ul>
         <li><a href="politics.html">Politics</a></li>
         <li><a href="economy.html">Economy</a></li>
         <li><a href="sport.html">Sport</a></li>
         <li><a href="weather.html">Weather</a></li>
-        <li><a href="national.html">National</a></li>
         <li><a href="aboutus.html">About us</a></li>
       </ul>
     </nav>
-
     <section class="heroarticle">
       <div>
         <a href="article.html" target="_blank">
@@ -63,13 +52,11 @@
 
       <aside class="sidetab">
         <div class="tab">
-          <ul>
             <!-- Notera: data-target matchar id på panelerna -->
             <button class="tabbutton" data-target="politics">Politics</button>
             <button class="tabbutton" data-target="Economy">Economy</button>
             <button class="tabbutton" data-target="sport">Sport</button>
             <button class="tabbutton" data-target="weather">Weather</button>
-          </ul>
         </div>
 
         <!-- PANEL 1: POLITICS -->
@@ -125,10 +112,65 @@
         <div class="sidearticles" id="weather"></div>
       </aside>
     </section>
-
-    <h2 class="sectionheader">Latest News</h2>
+    <h3 class="sectionheader">Latest News</h2>
     <hr>
-
+    <section class="articles">
+                <article>
+                     <a href="article.html">
+                        <div>
+                            <img src="https://media.newyorker.com/photos/68d2f1951a20986a24b999e7/4:3/w_1600%2Cc_limit/college%2520should%2520be%2520harder%25204_bleed.png">
+                        </div>
+                        <h2>should collage get harder ?</h3>
+                            <p>A.I. is coming for kno-wledge work, and yet college seems to be getting easier. Does something need to change?</p>
+                            <p>By Joshua Rothman</p>
+                            <p>September 30, 2025</p>
+                        </a>
+                </article>
+                <article>
+                     <a href="article.html">
+                        <div>
+                       <img src="https://media.newyorker.com/photos/68d2f1951a20986a24b999e7/4:3/w_1600%2Cc_limit/college%2520should%2520be%2520harder%25204_bleed.png">
+                        </div>
+                        <h2>should collage get harder ?</h3>
+                            <p>A.I. is coming for kno-wledge work, and yet college seems to be getting easier. Does something need to change?</p>
+                            <p>By Joshua Rothman</p>
+                            <p>September 30, 2025</p>
+                        </a>
+                </article>
+                <article>
+                     <a href="article.html">
+                        <div>
+                       <img src="https://media.newyorker.com/photos/68d2f1951a20986a24b999e7/4:3/w_1600%2Cc_limit/college%2520should%2520be%2520harder%25204_bleed.png">
+                        </div>
+                        <h3>should collage get harder ?</h3>
+                            <p>A.I. is coming for kno-wledge work, and yet college seems to be getting easier. Does something need to change?</p>
+                            <p>By Joshua Rothman</p>
+                            <p>September 30, 2025</p>
+                        </a>
+                </article>
+                <article>
+                     <a href="article.html">
+                        <div>
+                       <img src="https://media.newyorker.com/photos/68d2f1951a20986a24b999e7/4:3/w_1600%2Cc_limit/college%2520should%2520be%2520harder%25204_bleed.png">
+                        </div>
+                        <h3>should collage get harder ?</h3>
+                            <p>A.I. is coming for kno-wledge work, and yet college seems to be getting easier. Does something need to change?</p>
+                            <p>By Joshua Rothman</p>
+                            <p>September 30, 2025</p>
+                        </a>
+                </article>
+                <article>
+                  <a href="article.html">
+                        <div>
+                            <img src="https://media.newyorker.com/photos/68d2f1951a20986a24b999e7/4:3/w_1600%2Cc_limit/college%2520should%2520be%2520harder%25204_bleed.png">
+                        </div>
+                        <h3>should collage get harder ?</h3>
+                            <p>A.I. is coming for kno-wledge work, and yet college seems to be getting easier. Does something need to change?</p>
+                            <p>By Joshua Rothman</p>
+                            <p>September 30, 2025</p>
+                  </a>
+                </article>
+      </section>
     <footer>
       <div>
         <p>News</p>
