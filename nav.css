@@ -38,24 +38,26 @@ header > div:last-child > button:hover{
 
 }
 /*--nav-and-contents*/
-nav{
+.mainnav{
     display: flex;
     justify-content: center;
-    align-items:center;
+    position: sticky;
+    top:0;
+    background-color: white;
 }
-nav ul{
+.mainnav ul{
     list-style-type: none;
     display:flex ;
     gap:2rem;    
     font-weight: bold;
     font-size:16px;
 }
-nav a{
+.mainnav a{
     position: relative;
     text-decoration:none;
     color:var(--default-text-color);
 }
-nav a:after{
+.mainnav a:after{
   content: '';
   position: absolute;
   width: 0; height: 3px;
@@ -65,7 +67,40 @@ nav a:after{
   transition: .2s ease;
 }
  
-nav a:hover:after{
+.mainnav a:hover:after{
   width: 100%;
   background:red;
+}
+/*--alit-nav*/
+.altnav summary::marker{
+    content:"";
+}
+.altnav{
+    justify-self: center;
+}
+
+.altnav ul{
+    list-style-type: none;
+    display: grid;
+    justify-content: center;
+    gap:2rem;
+}
+details .open {
+  display: none;
+}
+
+details[open] .open {
+  display: inline;
+}
+
+details .closed {
+  display: inline;
+}
+
+details[open] .closed {
+  display: none;
+}
+.altnav a{
+    text-decoration:none;
+    color:var(--default-text-color);
 }

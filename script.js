@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelector('.tab');
-  const panels = document.querySelectorAll('.sidearticles');
+  const panels = document.querySelectorAll('.tabarticle');
   const buttons = document.querySelectorAll('.tabbutton');
 
   function showPanel(id) {
