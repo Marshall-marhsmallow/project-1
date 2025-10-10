@@ -76,7 +76,9 @@ header > div:last-child > button:hover{
     content:"";
 }
 .altnav{
+    justify-content: center;
     justify-self: center;
+    display:none;
 }
 
 .altnav ul{
