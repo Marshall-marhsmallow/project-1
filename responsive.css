@@ -26,6 +26,12 @@
     {
         display: none;
     }
+    .loginbutton{
+        display:none;
+    }
+    .loginbutton button{
+        display:none;
+    }
     .altnav{
         width:100%;
         display: flex;
@@ -36,6 +42,7 @@
     .windowarticle img{
         width:100%;
     }
+    
 }
 @media (max-width: 850px){
     .windowarticle a{

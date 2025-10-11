@@ -24,3 +24,18 @@
     transition-duration:0.5s;
     cursor: pointer;
 }
+.forum > input:nth-child(13):active{
+    background-color: green;
+}
+.aboutus{
+    width:90%;
+    margin-left:1rem;
+    display: flex;
+    flex-direction:column;
+    min-height:565px;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    flex-wrap:wrap;
+    text-align:center;
+}

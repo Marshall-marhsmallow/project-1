@@ -17,15 +17,33 @@ header > div:last-child{
     gap:0.5rem;
 
 }
-header button{
-    color:var(--header-text-color);
+.searchbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-header > div:last-child > button{
+.searchbar > input{
+    height: 26px;
+    border:none;
+}
+.searchbar button:hover{
+    cursor: pointer;
+    background-color: #adadad;
+
+}
+.searchbar button{
+    background-color: black;
+    border:none;
+}
+
+
+.loginbutton button{
     background-color:transparent;
     padding:0 1rem 0 1rem;
     border:none;
     font-size:20px;
     background-clip:border-box;
+    color:var(--header-text-color);
 
 }
 header > div:last-child > button:hover{
@@ -79,7 +97,9 @@ header > div:last-child > button:hover{
     justify-self: center;
     display:none;
 }
-
+.altnav > details:nth-child(2){
+    margin-left:auto;
+}
 .altnav ul{
     list-style-type: none;
     display: grid;
@@ -104,4 +124,23 @@ details[open] .closed {
 .altnav a{
     text-decoration:none;
     color:var(--default-text-color);
+}
+.altnav hr{
+    height: 1px;
+    background-color: black;
+    margin:0;
+
+}
+.altnav button{
+    background-color: transparent;
+    border:none;
+    font-weight: bold;
+    padding:0.3rem;
+    border-radius: 1rem;
+}
+.altnav button:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    transition-duration:0.5s;
 }
