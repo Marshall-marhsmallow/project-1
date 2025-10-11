@@ -38,7 +38,6 @@
 }
 .sidearticles article{
     margin:0 0.5rem 0 0.5rem;
-    padding: 0.5rem;
     border-bottom:1px solid black;
 }
 .sidearticles article a{
@@ -54,6 +53,7 @@
     width:150px;
     height:100px;
     border-radius:1rem;
+    align-self:center;
 }
 .sidearticles > article > a > div:nth-child(2){
     width: 100%;

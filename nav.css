@@ -2,7 +2,6 @@
 header{
     display:grid;
     border-bottom:1px solid black;
-    display:grid;
     grid-template-columns:auto auto auto;
     align-items: center;
     background-color: var(--header-bg-color);
