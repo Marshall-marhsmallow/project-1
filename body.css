@@ -69,7 +69,6 @@
 }
 /*--quick-nav-tab*/
 .navtab{
-
     display: flex;
     flex-direction:column;
     gap: 1rem;
@@ -99,8 +98,8 @@
     gap:1rem ;
     text-align: center;
     flex-wrap:wrap;
-    justify-content: center;
 }
+
 .tabarticle a{
     display: flex;
     text-decoration: none;

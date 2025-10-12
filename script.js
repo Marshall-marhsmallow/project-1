@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
    
     const panel = document.getElementById(id);
-    if (panel) panel.style.display = 'flex';
+    if (panel) panel.style.display = 'grid';
 
     
     const btn = [...buttons].find(b => b.dataset.target === id);
