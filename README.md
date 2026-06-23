@@ -3,4 +3,4 @@
 This was my first project as a front-end student aimed to test HTML and CSS abilities.
 
 a very simple news page with main sections and articles
-alive preview can be founde here: 
+alive preview can be founde here: https://marshall-marhsmallow.github.io/project-1/
